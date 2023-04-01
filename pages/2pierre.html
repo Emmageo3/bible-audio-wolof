@@ -52,4 +52,30 @@
 </body>
 </html>
 
-<script src="script.js"></script>
+<script>
+    var currentAudio = null;
+
+    var allAudio = document.querySelectorAll('audio');
+
+    allAudio.forEach(function(audio) {
+    audio.addEventListener('ended', function() {
+        var nextAudio = audio.parentElement.parentElement.nextElementSibling;
+        if (nextAudio) { 
+        var nextAudioPlayer = nextAudio.querySelector('audio');
+        currentAudio = nextAudioPlayer; 
+        nextAudioPlayer.play(); 
+        } else { 
+        currentAudio = null;
+        }
+    });
+    });
+
+    allAudio.forEach(function(audio) {
+    audio.addEventListener('play', function() {
+        if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        }
+        currentAudio = audio;
+    });
+    });
+</script>
