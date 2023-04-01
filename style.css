@@ -135,6 +135,7 @@ body{
         height: 4rem;
         color: #222;
         text-decoration: none;
+        margin: 0 !important;
     }
     
     .audio-container{
