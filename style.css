@@ -241,3 +241,17 @@ input:focus{
     outline: none;
 }
 
+.audio{
+    width: 100%;
+}
+
+.audio audio{
+    width: 100%;
+    outline: none;
+    background: none !important;
+}
+
+.audio audio::-webkit-media-controls-enclosure{
+    background: none !important;
+}
+
