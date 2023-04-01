@@ -198,3 +198,12 @@ body{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 5px;
 }
+
+
+footer{
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+    margin-top: 2rem;
+}
