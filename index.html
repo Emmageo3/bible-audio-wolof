@@ -15,6 +15,7 @@
         </div>
     </div>
     <div class="livres-content">
+        <input id="search" type="text" placeholder="Rechercher un livre..." autocomplete="off"/>
         <div class="livres">
             <div class="livre">
                 <div class="banner">
@@ -187,3 +188,30 @@
     
 </body>
 </html>
+
+<script>
+    let input = document.getElementById("search");
+
+    let list = document.querySelectorAll(".livre");
+
+    let message = document.getElementById("message");
+
+    function search (){
+    let matchFound = false;
+    for(let i = 0; i < list.length; i += 1){
+        if(list[i].querySelector("h2").innerText.toLowerCase().includes(input.value.toLowerCase())){
+        list[i].style.display = "block";
+        matchFound = true;
+        }else{
+        list[i].style.display = "none";
+        }
+    }
+    if(!matchFound){
+        message.style.display = "block";
+    }else{
+        message.style.display = "none";
+    }
+    }
+
+    input.addEventListener('input', search);
+</script>

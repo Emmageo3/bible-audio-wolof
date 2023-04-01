@@ -21,6 +21,7 @@ body{
     
     .livres-content{
         margin: 2rem 4rem;
+        min-height: 80vh;
     }
     
     .livres {
@@ -29,6 +30,7 @@ body{
         grid-template-rows: 1fr;
         grid-column-gap: 25px;
         grid-row-gap: 25px;
+        margin-top: 2rem;
     }
       
     .livres .livre .banner{
@@ -96,6 +98,19 @@ body{
     .livres-content a{
         color: #000;
     }
+
+    input#search{
+        width: 50%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border: #00000014;
+        box-shadow: 0 .5rem 1rem #00000030;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
 }
 
 @media only screen and (max-width: 450px) {
@@ -109,6 +124,7 @@ body{
 
     .livres-content{
         margin: 2rem;
+        min-height: 80vh;
     }
     
     .livres {
@@ -117,6 +133,7 @@ body{
         grid-template-rows: 1fr;
         grid-column-gap: 25px;
         grid-row-gap: 25px;
+        margin-top: 3rem;
     }
       
     .livres .livre .banner{
@@ -187,6 +204,18 @@ body{
         color: #000;
         margin-left: 2rem;
     }
+
+    input#search{
+        width: 90%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        border: #00000014;
+        box-shadow: 0 .5rem 1rem #00000030;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
 }
 
 .container{
@@ -207,3 +236,8 @@ footer{
     padding: 1rem;
     margin-top: 2rem;
 }
+
+input:focus{
+    outline: none;
+}
+
