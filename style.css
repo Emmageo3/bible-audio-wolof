@@ -86,10 +86,11 @@ body{
     .audio audio{
         width: 100%;
         outline: none;
+        background: none !important;
     }
     
     .audio audio::-webkit-media-controls-enclosure{
-        background: none;
+        background: none !important;
     }
     
     .livres-content a{
@@ -175,10 +176,11 @@ body{
     .audio audio{
         width: 100%;
         outline: none;
+        background: none !important;
     }
     
     .audio audio::-webkit-media-controls-enclosure{
-        background: none;
+        background: none !important;
     }
     
     .livres-content a{
