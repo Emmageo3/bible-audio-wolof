@@ -30,7 +30,7 @@ body{
         grid-template-rows: 1fr;
         grid-column-gap: 25px;
         grid-row-gap: 25px;
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
       
     .livres .livre .banner{
@@ -104,11 +104,11 @@ body{
         height: 3rem;
         display: flex;
         justify-content: center;
-        margin: 0 auto;
         border: #00000014;
         box-shadow: 0 .5rem 1rem #00000030;
         border-radius: .5rem;
         padding: 1rem;
+        margin: 3rem auto;
     }
 
 }
@@ -210,11 +210,11 @@ body{
         height: 3rem;
         display: flex;
         justify-content: center;
-        margin: 0 auto;
         border: #00000014;
         box-shadow: 0 .5rem 1rem #00000030;
         border-radius: .5rem;
         padding: 1rem;
+        margin: 3rem auto;
     }
 }
 
